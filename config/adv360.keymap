@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(LEFT_COMMAND) &kp TAB>,
                 <&macro_release>;
 
@@ -57,7 +57,11 @@
         show_windows: show_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp UP_ARROW>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_CONTROL &kp UP>,
+                <&macro_release>;
+
             label = "SHOW_WINDOWS";
         };
     };
