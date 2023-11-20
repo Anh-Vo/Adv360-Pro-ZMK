@@ -47,18 +47,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT_COMMAND &kp TAB>,
                 <&macro_release>;
 
             label = "TAB_RIGHT";
-        };
-
-        show_windows: show_windows {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(UP)>;
-            label = "SHOW_WINDOWS";
         };
     };
 
