@@ -1,18 +1,18 @@
-macro_tab-left: macro_tab-left{
+macro_show_windows: macro_show_windows{
 compatible = "zmk,behavior-macro";
-label = "macro_tab-left";
+label = "macro_show_windows";
 #binding-cells = <0>;
-bindings = <&kp LEFT_COMMAND>, <&kp LEFT_SHIFT>, <&kp TAB>;
+bindings = <&kp LEFT_CONTROL>, <&kp UP>;
 };
-macro_tab-right: macro_tab-right{
+macro_tab_right: macro_tab_right{
 compatible = "zmk,behavior-macro";
-label = "macro_tab-right";
+label = "macro_tab_right";
 #binding-cells = <0>;
 bindings = <&kp LEFT_COMMAND>, <&kp TAB>;
 };
-macro_show-windows: macro_show-windows{
+macro_tab_left: macro_tab_left{
 compatible = "zmk,behavior-macro";
-label = "macro_show-windows";
+label = "macro_tab_left";
 #binding-cells = <0>;
-bindings = <&kp LEFT_CONTROL>, <&kp UP>;
+bindings = <&kp LEFT_COMMAND>, <&kp LEFT_SHIFT>, <&kp TAB>;
 };
